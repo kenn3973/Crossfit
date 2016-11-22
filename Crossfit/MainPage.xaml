@@ -15,13 +15,14 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ListView x:Name="listView" HorizontalAlignment="Left" Height="664" Margin="88,67,0,0" VerticalAlignment="Top" Width="405" SelectionChanged="listView_SelectionChanged" SelectedItem="{Binding SelectedWod, Mode=TwoWay}" ItemsSource="{Binding Wodliste}"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="754,119,0,0" TextWrapping="Wrap" Text="{Binding SelectedWod}" VerticalAlignment="Top" Height="128" Width="237"/>
-        <TextBox x:Name="TBWodName" HorizontalAlignment="Left" Margin="498,471,0,0" TextWrapping="Wrap" Text="{Binding NewWodName.WodName, Mode=TwoWay}" VerticalAlignment="Top" Height="96" Width="205" PlaceholderText="" Header="Wod Navn"/>
-        <TextBox x:Name="TBDescription" HorizontalAlignment="Left" Margin="754,471,0,0" TextWrapping="Wrap" Text="{Binding NewWodName.Description, Mode=TwoWay}" VerticalAlignment="Top" Height="96" Width="198" PlaceholderText="" Header="Description"/>
-        <TextBox x:Name="TBMovement1" HorizontalAlignment="Left" Margin="995,471,0,0" TextWrapping="Wrap" Text="{Binding NewWodName.Movement1, Mode=TwoWay}" VerticalAlignment="Top" Height="96" Width="199" PlaceholderText="" Header="Movement 1"/>
-        <TextBox x:Name="TBMovement2" HorizontalAlignment="Left" Margin="1234,471,0,0" TextWrapping="Wrap" Text="{Binding NewWodName.Movement2, Mode=TwoWay}" VerticalAlignment="Top" Height="96" Width="196" PlaceholderText="" Header="Movement 2"/>
-        <Button x:Name="Add" Content="Button" HorizontalAlignment="Left" Margin="553,709,0,0" VerticalAlignment="Top" Height="99" Width="150" Command="{Binding AddWodCommand}"/>
-        <Button x:Name="Remove" Content="Button" HorizontalAlignment="Left" Margin="815,709,0,0" VerticalAlignment="Top" Height="99" Width="137" Command="{Binding RemoveWodCommand}"/>
-        <TextBox x:Name="TBGender" HorizontalAlignment="Left" Margin="498,606,0,0" TextWrapping="Wrap" Text="{Binding NewWod.Gender, Mode=TwoWay}" VerticalAlignment="Top" Height="98" Width="205" Header="Gender"/>
-        <TextBox x:Name="TBNumber" HorizontalAlignment="Left" Margin="754,606,0,0" TextWrapping="Wrap" Text="{Binding NewWod.Number, Mode=TwoWay}" VerticalAlignment="Top" Height="98" Width="198" Header="Number"/>
+        <Button x:Name="Add" Content="Add" HorizontalAlignment="Left" Margin="553,550,0,0" VerticalAlignment="Top" Height="99" Width="150" Command="{Binding AddWodCommand}"/>
+        <Button x:Name="Remove" Content="Remove" HorizontalAlignment="Left" Margin="815,550,0,0" VerticalAlignment="Top" Height="99" Width="150" Command="{Binding RemoveWodCommand}"/>
+        <TextBox x:Name="TBWodName" HorizontalAlignment="Left" Margin="553,369,0,0" TextWrapping="Wrap" Text="{Binding NewWod.WodName, Mode=TwoWay}" VerticalAlignment="Top" Height="93" Width="169" Header="Wod Name"/>
+        <TextBox x:Name="TBDescription" HorizontalAlignment="Left" Margin="754,369,0,0" TextWrapping="Wrap" Text="{Binding NewWod.Description, Mode=TwoWay}" VerticalAlignment="Top" Height="93" Width="169
+                 " Header="Description"/>
+        <TextBox x:Name="TBMovement1" HorizontalAlignment="Left" Margin="960,369,0,0" TextWrapping="Wrap" Text="{Binding NewWod.Movement1, Mode=TwoWay}" VerticalAlignment="Top" Height="93" Width="169
+                 " Header="Movement 1"/>
+        <TextBox x:Name="TBMovement2" HorizontalAlignment="Left" Margin="1168,369,0,0" TextWrapping="Wrap" Text="{Binding NewWod.Movement2, Mode=TwoWay}" VerticalAlignment="Top" Height="93" Width="169
+                 " Header="Movement 2"/>
     </Grid>
 </Page>

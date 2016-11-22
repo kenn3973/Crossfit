@@ -15,9 +15,9 @@ namespace Crossfit.Model
             //var wod1 = new Wod();
             //wod1.WodName = "";
 
-            this.Add(new Wod() { WodName = "Fran", Description = "AFAP", Movement1 = "Thrusters", Movement2 = "Pullups", Gender = true, Number = 1});
-            this.Add(new Wod() { WodName = "Cindy", Description = "AMRAP 20", Movement1 = "Pullups", Movement2 = "Pushups", Gender = true, Number = 1});
-            this.Add(new Wod() { WodName = "Diane", Description = "21-15-9", Movement1 = "Deadlift", Movement2 = "Handstand pushups", Gender = true, Number = 1});
+            this.Add(new Wod() { WodName = "Fran", Description = "AFAP", Movement1 = "Thrusters", Movement2 = "Pullups"});
+            this.Add(new Wod() { WodName = "Cindy", Description = "AMRAP 20", Movement1 = "Pullups", Movement2 = "Pushups" });
+            this.Add(new Wod() { WodName = "Diane", Description = "21-15-9", Movement1 = "Deadlift", Movement2 = "Handstand pushups" });
         }
     }
 }
