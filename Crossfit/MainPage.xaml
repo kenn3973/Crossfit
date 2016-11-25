@@ -24,5 +24,7 @@
                  " Header="Movement 1"/>
         <TextBox x:Name="TBMovement2" HorizontalAlignment="Left" Margin="1168,369,0,0" TextWrapping="Wrap" Text="{Binding NewWod.Movement2, Mode=TwoWay}" VerticalAlignment="Top" Height="93" Width="169
                  " Header="Movement 2"/>
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="553,693,0,0" VerticalAlignment="Top" Width="150" Height="99" Command="{Binding SaveWodCommand}"/>
+        <Button x:Name="Load" Content="Hent" HorizontalAlignment="Left" Margin="815,693,0,0" VerticalAlignment="Top" Height="99" Width="150" Command="{Binding LoadWodCommand}"/>
     </Grid>
 </Page>
